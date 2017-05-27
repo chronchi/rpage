@@ -322,15 +322,50 @@ div.tocify {
 </div>
 
 
-<div id="introducao" class="section level1">
-<h1><span class="header-section-number">1</span> Introdução</h1>
-<p>Esta atividade tem como intuito mostrar e fazer arquivos para um <em>website</em>. Basta criar um arquivo .Rmd no RStudio.</p>
+<div id="rstudio-e-websites" class="section level1">
+<h1><span class="header-section-number">1</span> RStudio e websites</h1>
 </div>
-<div id="customizacao" class="section level1">
-<h1><span class="header-section-number">2</span> Customização</h1>
-<p>Vamos customizar o nosso pré-âmbulo. Vamos colocar como saída o formato html. Vamos colocar <code>toc: true</code> para adicionar o sumário. A opçao</p>
-<pre class="r"><code>  x &lt;- 10</code></pre>
-<p>Para mais informações, acesse em <a href="projeto.html">Projeto</href></p>
+<div id="introducao" class="section level1">
+<h1><span class="header-section-number">2</span> Introdução</h1>
+<p>Esta atividade tem como intuito ensinar a criar um <em>website</em> utilizando os pacotes do <em>R</em>, mais especificamente o RMarkdown.</p>
+<p>Vamos utilizar o Github para hostear o nosso site, já que esta função é gratuita na plataforma.</p>
+</div>
+<div id="configurando-o-arquivo-_site.yml" class="section level1">
+<h1><span class="header-section-number">3</span> Configurando o arquivo _site.yml</h1>
+<p>Crie um arquivo chamado *_site.yml* e dentro dele adicione</p>
+<pre><code>/name: &quot;Meu site&quot;
+output_dir: &quot;.&quot;
+output:
+  html_document:
+    theme: paper
+    includes:
+      #before_body: before_.html
+      #after_body: after.html
+    #css: style_.css
+navbar:
+  left:
+    - text: &quot;Home&quot;
+      href: index.html
+    - text: &quot;Projetos&quot;
+      href: projeto.html
+      menu:
+        - text: &quot;Projeto 2&quot;
+          href: &quot;projetos2.html&quot;</code></pre>
+</div>
+<div id="inicializando-o-site" class="section level1">
+<h1><span class="header-section-number">4</span> Inicializando o site</h1>
+<p>Crie um arquivo nomeado <strong>index.Rmd</strong>. Após isto, adicione no pré-âmbulo.</p>
+<pre><code>title: RStudio e websites
+output:
+  html_document:
+    toc: true
+    toc_float: true
+    number_sections: true
+    code_folding: hide</code></pre>
+<p>Preencha o campo <strong>title</strong> com o nome do seu site.</p>
+<p>O campo <strong>output</strong> é onde você indica o tipo de saída quando renderizamos o site. Neste caso, vamos escolher <em>html_document</em>.</p>
+<p>Já o campo</p>
+<p>Para mais informações, acesse em <a href="projeto2.html">Projeto</href></p>
 </div>
 
 
