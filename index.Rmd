@@ -14,7 +14,6 @@ output:
 
 Esta atividade tem como intuito ensinar a criar um *website* utilizando
 os pacotes do *R*, mais especificamente o RMarkdown.
-
 Vamos utilizar o Github para hostear o nosso site, já que esta função
 é gratuita na plataforma.
 
@@ -55,10 +54,8 @@ Crie um arquivo nomeado **index.Rmd**. Após isto, adicione no pré-âmbulo.
         code_folding: hide
 
 Preencha o campo **title** com o nome do seu site.
-
 O campo **output** é onde você indica o tipo de saída quando renderizamos o
 site. Neste caso, vamos escolher *html_document*.
-
 Já o campo
 
 Para mais informações, acesse em <a href="projeto2.html">Projeto</href>
