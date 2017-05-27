@@ -19,4 +19,4 @@ navbar:
         - text: "Projeto"
           href: "projetos2.html"
         - text: "Livro BookDown"
-          href: "_book/index.html"
+          href: "book/index.html"
