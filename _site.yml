@@ -12,7 +12,6 @@ navbar:
     - text: "Home"
       href: index.html
     - text: "Projetos"
-      href: projeto.html
       menu:
         - text: "Projeto"
           href: "projetos2.html"
