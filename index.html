@@ -11,11 +11,11 @@
 
 
 
-<title>RStudio e websites</title>
+<title>RMarkdown e websites</title>
 
 <script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<link href="site_libs/bootstrap-3.3.5/css/paper.min.css" rel="stylesheet" />
+<link href="site_libs/bootstrap-3.3.5/css/journal.min.css" rel="stylesheet" />
 <script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
 <script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
 <script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
@@ -101,34 +101,34 @@ button.code-folding-btn:focus {
 <style type="text/css">
 /* padding for bootstrap navbar */
 body {
-  padding-top: 64px;
+  padding-top: 61px;
   padding-bottom: 40px;
 }
 /* offset scroll position for anchor links (for fixed navbar)  */
 .section h1 {
-  padding-top: 69px;
-  margin-top: -69px;
+  padding-top: 66px;
+  margin-top: -66px;
 }
 
 .section h2 {
-  padding-top: 69px;
-  margin-top: -69px;
+  padding-top: 66px;
+  margin-top: -66px;
 }
 .section h3 {
-  padding-top: 69px;
-  margin-top: -69px;
+  padding-top: 66px;
+  margin-top: -66px;
 }
 .section h4 {
-  padding-top: 69px;
-  margin-top: -69px;
+  padding-top: 66px;
+  margin-top: -66px;
 }
 .section h5 {
-  padding-top: 69px;
-  margin-top: -69px;
+  padding-top: 66px;
+  margin-top: -66px;
 }
 .section h6 {
-  padding-top: 69px;
-  margin-top: -69px;
+  padding-top: 66px;
+  margin-top: -66px;
 }
 </style>
 
@@ -293,7 +293,10 @@ div.tocify {
   </a>
   <ul class="dropdown-menu" role="menu">
     <li>
-      <a href="projetos2.html">Projeto 2</a>
+      <a href="projeto.html">Projeto</a>
+    </li>
+    <li>
+      <a href="projetos2.html">Projeto</a>
     </li>
   </ul>
 </li>
@@ -317,20 +320,17 @@ div.tocify {
 
 
 
-<h1 class="title toc-ignore">RStudio e websites</h1>
+<h1 class="title toc-ignore">RMarkdown e websites</h1>
 
 </div>
 
 
-<div id="rstudio-e-websites" class="section level1">
-<h1><span class="header-section-number">1</span> RStudio e websites</h1>
-</div>
 <div id="introducao" class="section level1">
-<h1><span class="header-section-number">2</span> Introdução</h1>
+<h1><span class="header-section-number">1</span> Introdução</h1>
 <p>Esta atividade tem como intuito ensinar a criar um <em>website</em> utilizando os pacotes do <em>R</em>, mais especificamente o RMarkdown. Vamos utilizar o Github para hostear o nosso site, já que esta função é gratuita na plataforma.</p>
 </div>
 <div id="configurando-o-arquivo-_site.yml" class="section level1">
-<h1><span class="header-section-number">3</span> Configurando o arquivo _site.yml</h1>
+<h1><span class="header-section-number">2</span> Configurando o arquivo _site.yml</h1>
 <p>Crie um arquivo chamado *_site.yml* e dentro dele adicione</p>
 <pre><code>/name: &quot;Meu site&quot;
 output_dir: &quot;.&quot;
@@ -350,9 +350,10 @@ navbar:
       menu:
         - text: &quot;Projeto 2&quot;
           href: &quot;projetos2.html&quot;</code></pre>
+<p>Para maiores detalhes sobre como preencher e customizar esse arquivo, acesse este <a href="http://rmarkdown.rstudio.com/rmarkdown_websites.html">site</a>.</p>
 </div>
 <div id="inicializando-o-site" class="section level1">
-<h1><span class="header-section-number">4</span> Inicializando o site</h1>
+<h1><span class="header-section-number">3</span> Inicializando o site</h1>
 <p>Crie um arquivo nomeado <strong>index.Rmd</strong>. Após isto, adicione no pré-âmbulo.</p>
 <pre><code>title: RStudio e websites
 output:
@@ -361,8 +362,13 @@ output:
     toc_float: true
     number_sections: true
     code_folding: hide</code></pre>
-<p>Preencha o campo <strong>title</strong> com o nome do seu site. O campo <strong>output</strong> é onde você indica o tipo de saída quando renderizamos o site. Neste caso, vamos escolher <em>html_document</em>. Já o campo</p>
-<p>Para mais informações, acesse em <a href="projeto2.html">Projeto</href></p>
+<p>Preencha o campo <strong>title</strong> com o nome do seu site.</p>
+<p>O campo <strong>output</strong> é onde você indica o tipo de saída quando renderizamos o site. Neste caso, vamos escolher <em>html_document</em>.</p>
+<p>Já o campo <strong>toc</strong> é onde podemos colocar <em>true</em> ou <em>false</em>, que nos diz se queremos o sumário da página ou não.</p>
+<p>O <strong>toc_float</strong> nos diz se o sumário vai nos acompanhar enquanto navegamos pela página.</p>
+<p>O item <strong>number_sections</strong> indica se queremos numeração nas seções.</p>
+<p>E por último, o campo <strong>code_folding</strong> é para <em>esconder</em> o código, sendo que se o leitor quiser visualizar o código, ele deve pressionar o botão <em>Code</em> e depois <em>Show All Code</em>.</p>
+<p>Para mais informações, acesse em <a href="projetos2.html">Projeto</href></p>
 </div>
 
 

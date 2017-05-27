@@ -1,5 +1,5 @@
 ---
-title: RStudio e websites
+title: RMarkdown e websites
 output:
   html_document:
     toc: true
@@ -8,9 +8,7 @@ output:
     code_folding: hide
 ---
 
-# RStudio e websites
-
-#Introdução
+# Introdução
 
 Esta atividade tem como intuito ensinar a criar um *website* utilizando
 os pacotes do *R*, mais especificamente o RMarkdown.
@@ -40,6 +38,8 @@ Crie um arquivo chamado *_site.yml* e dentro dele adicione
             - text: "Projeto 2"
               href: "projetos2.html"
 
+Para maiores detalhes sobre como preencher e customizar esse arquivo, acesse este
+<a href="http://rmarkdown.rstudio.com/rmarkdown_websites.html">site</a>.
 
 # Inicializando o site
 
@@ -54,8 +54,20 @@ Crie um arquivo nomeado **index.Rmd**. Após isto, adicione no pré-âmbulo.
         code_folding: hide
 
 Preencha o campo **title** com o nome do seu site.
+
 O campo **output** é onde você indica o tipo de saída quando renderizamos o
 site. Neste caso, vamos escolher *html_document*.
-Já o campo
 
-Para mais informações, acesse em <a href="projeto2.html">Projeto</href>
+Já o campo **toc** é onde podemos colocar *true* ou *false*, que nos diz se
+queremos o sumário da página ou não.
+
+O **toc_float** nos diz se o sumário vai nos acompanhar enquanto navegamos
+pela página.
+
+O item **number_sections** indica se queremos numeração nas seções.
+
+E por último, o campo **code_folding** é para *esconder* o código, sendo que
+se o leitor quiser visualizar o código, ele deve pressionar o botão
+*Code* e depois *Show All Code*.
+
+Para mais informações, acesse em <a href="projetos2.html">Projeto</href>

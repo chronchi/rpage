@@ -2,7 +2,7 @@
 output_dir: "."
 output:
   html_document:
-    theme: paper
+    theme: journal
     includes:
       #before_body: before_.html
       #after_body: after.html
@@ -14,5 +14,7 @@ navbar:
     - text: "Projetos"
       href: projeto.html
       menu:
-        - text: "Projeto 2"
+        - text: "Projeto"
+          href: "projeto.html"
+        - text: "Projeto"
           href: "projetos2.html"
