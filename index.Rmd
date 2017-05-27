@@ -8,20 +8,57 @@ output:
     code_folding: hide
 ---
 
+# RStudio e websites
+
 #Introdução
 
-Esta atividade tem como intuito mostrar e fazer arquivos para um *website*.
-Basta criar um arquivo .Rmd no RStudio.
+Esta atividade tem como intuito ensinar a criar um *website* utilizando
+os pacotes do *R*, mais especificamente o RMarkdown.
 
-#Customização
+Vamos utilizar o Github para hostear o nosso site, já que esta função
+é gratuita na plataforma.
 
-Vamos customizar o nosso pré-âmbulo.
-Vamos colocar como saída o formato html. Vamos colocar `toc: true` para adicionar
-o sumário. A opçao
+# Configurando o arquivo _site.yml
+
+Crie um arquivo chamado *_site.yml* e dentro dele adicione
+
+    /name: "Meu site"
+    output_dir: "."
+    output:
+      html_document:
+        theme: paper
+        includes:
+          #before_body: before_.html
+          #after_body: after.html
+        #css: style_.css
+    navbar:
+      left:
+        - text: "Home"
+          href: index.html
+        - text: "Projetos"
+          href: projeto.html
+          menu:
+            - text: "Projeto 2"
+              href: "projetos2.html"
 
 
-```{r}
-  x <- 10
-```
+# Inicializando o site
 
-Para mais informações, acesse em <a href="projeto.html">Projeto</href>
+Crie um arquivo nomeado **index.Rmd**. Após isto, adicione no pré-âmbulo.
+
+    title: RStudio e websites
+    output:
+      html_document:
+        toc: true
+        toc_float: true
+        number_sections: true
+        code_folding: hide
+
+Preencha o campo **title** com o nome do seu site.
+
+O campo **output** é onde você indica o tipo de saída quando renderizamos o
+site. Neste caso, vamos escolher *html_document*.
+
+Já o campo
+
+Para mais informações, acesse em <a href="projeto2.html">Projeto</href>

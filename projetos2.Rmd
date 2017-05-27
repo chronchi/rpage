@@ -1,5 +1,5 @@
 ---
-title: Projetos 2
+title: Projetos
 ---
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam mi velit, auctor vitae risus nec, facilisis porta ligula. In erat ante, vulputate non ex faucibus, accumsan auctor mauris. Nullam semper lacus a tempor mattis. Vestibulum id massa imperdiet, consectetur ante vel, sagittis velit. Interdum et malesuada fames ac ante ipsum primis in faucibus. Mauris molestie quam magna, vel dapibus nibh ultrices nec. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Ut vestibulum, dui a convallis suscipit, erat mauris efficitur tortor, sit amet mattis sapien metus quis urna.

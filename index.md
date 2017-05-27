@@ -1,20 +1,13 @@
 # RStudio e websites
-Carlos Ronchi  
-20 de Maio de 2017  
+Carlos Ronchi
+20 de Maio de 2017
 
 #Introdução
 
-Esta atividade tem como intuito mostrar e fazer arquivos para um *website*.
-Basta criar um arquivo .Rmd no RStudio.
+Esta atividade tem como intuito ensinar a criar um *website* utilizando
+os pacotes do *R*.
 
-#Customização
+Vamos utilizar o Github para hostear o nosso site, já que esta função
+é gratuita na plataforma.
 
-Vamos customizar o nosso pré-âmbulo.
-Vamos colocar como saída o formato html. Vamos colocar `toc: true` para adicionar
-o sumário. A opçao
-
-
-
-```r
-  x <- 10
-```
+#Inicializando o site
